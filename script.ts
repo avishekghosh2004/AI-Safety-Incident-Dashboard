@@ -79,7 +79,6 @@ function renderIncidents() {
   });
 }
 
-// Handle form submission
 formEl.addEventListener("submit", (e) => {
   e.preventDefault();
 
