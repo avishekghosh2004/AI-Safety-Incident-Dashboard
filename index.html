@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Safety Incident Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>AI Safety Incident Dashboard</h1>
+
+      <!-- Filters -->
+      <div class="controls">
+        <select id="severityFilter">
+          <option value="All">All Severities</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+
+        <select id="sortOrder">
+          <option value="newest">Newest First</option>
+          <option value="oldest">Oldest First</option>
+        </select>
+      </div>
+
+      <!-- Incident List -->
+      <div id="incidentList" class="incident-list"></div>
+
+      <!-- New Incident Form -->
+      <div class="form-container">
+        <h2>Report New Incident</h2>
+        <form id="incidentForm">
+          <input type="text" id="title" placeholder="Title" required />
+          <textarea
+            id="description"
+            placeholder="Description"
+            required
+          ></textarea>
+          <div class="severity-options">
+            <label
+              ><input type="radio" name="severity" value="Low" required />
+              Low</label
+            >
+            <label
+              ><input type="radio" name="severity" value="Medium" />
+              Medium</label
+            >
+            <label
+              ><input type="radio" name="severity" value="High" /> High</label
+            >
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./dist/script.js"></script>
+  </body>
+</html>

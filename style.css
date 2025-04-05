@@ -1,0 +1,94 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.incident-list {
+  display: grid;
+  gap: 15px;
+}
+
+.incident {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  background: #fafafa;
+}
+
+.incident:hover {
+  background-color: #e6f7ff;
+}
+
+.incident-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.incident-details {
+  display: none;
+  margin-top: 10px;
+  color: #555;
+}
+
+.form-container {
+  margin-top: 30px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form button {
+  background-color: #0077cc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005fa3;
+}
+
+.severity-options {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
